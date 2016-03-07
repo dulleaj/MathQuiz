@@ -7,15 +7,15 @@ Create an app that asks the user to answer a basic math problem. Keep track of t
 
 Concepts Learned: 
 
-The difference between a class and an object
-The difference between an int, string, and bool
-The difference between properties and methods
-How to use ViewControllers
-How to use Storyboard to Incorporate UI into Your App
-Difference Between .m and .h file
-If Statements 
-The difference between the interface and implementation
-Using the console log
+The difference between a class and an object, 
+The difference between an int, string, and bool, 
+The difference between properties and methods, 
+How to use ViewControllers, 
+How to use Storyboard to Incorporate UI into Your App, 
+Difference Between .m and .h file, 
+If Statements, 
+The difference between the interface and implementation, 
+Using the console log, 
 
 My Struggles:
 

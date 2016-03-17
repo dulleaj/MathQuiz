@@ -244,7 +244,7 @@
             // http://www.ios-blog.co.uk/tutorials/objective-c/storing-data-with-nsuserdefaults/
             
         
-        self.totalStreak = 0;
+            self.totalStreak = 0;
         
         }
         self.streak.hidden = YES;

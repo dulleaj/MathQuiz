@@ -49,6 +49,9 @@
     self.streak.hidden = YES;
     self.highScoreLabel.hidden = NO;
     self.answerTimerLabel.hidden = YES;
+    
+    self.userAnswer.keyboardType = UIKeyboardTypeNumberPad;
+
         
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     // http://www.ios-blog.co.uk/tutorials/objective-c/storing-data-with-nsuserdefaults/

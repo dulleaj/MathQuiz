@@ -50,6 +50,7 @@
     self.highScoreLabel.hidden = NO;
     self.answerTimerLabel.hidden = YES;
     
+    self.title = @"Math Quiz";
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     // http://www.ios-blog.co.uk/tutorials/objective-c/storing-data-with-nsuserdefaults/
@@ -244,7 +245,7 @@
             // http://www.ios-blog.co.uk/tutorials/objective-c/storing-data-with-nsuserdefaults/
             
         
-        self.totalStreak = 0;
+            self.totalStreak = 0;
         
         }
         self.streak.hidden = YES;

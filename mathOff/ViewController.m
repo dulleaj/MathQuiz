@@ -82,6 +82,9 @@
     
     int userAnswerInt = [self.userAnswer.text intValue];
     
+    [self.answerTimer invalidate];
+    self.answerTimer = nil;
+    
     // IF THE ANSWER IS CORRECT
     
     if (userAnswerInt == self.answer) {
@@ -139,6 +142,11 @@
 
 // QUESTION
 - (void) askQuestion {
+    
+    
+    [self.answerTimer invalidate];
+    self.answerTimer = nil;
+    
 
     self.seconds = 0;
     

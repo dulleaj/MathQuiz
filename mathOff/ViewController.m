@@ -75,6 +75,8 @@
 // User hits START Button
 - (IBAction)startButtonWasTapped:(id)sender {
 
+    [self.userAnswer becomeFirstResponder];
+    
     [self askQuestion];
 
 }
@@ -184,9 +186,16 @@
         
     }else if (self.typeOfQuestion == 1) {
         
-        self.answer = self.firstNumber - self.secondNumber;
+        if (self.firstNumber >= self.secondNumber) {
+            
+            self.answer = self.firstNumber - self.secondNumber;
         
-        self.plus.text = @"-";
+            self.plus.text = @"-";
+            
+        }else{
+            
+            self.secondNumber = arc4random_uniform(self.firstNumber);
+        }
         
     }else if (self.typeOfQuestion == 2) {
         
@@ -233,7 +242,7 @@
     
     // IF TIME RUNS OUT
     
-    if (self.seconds == 5) {
+    if (self.seconds == 11) {
         
         self.view.backgroundColor = [UIColor redColor];
         
